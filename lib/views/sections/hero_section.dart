@@ -92,10 +92,13 @@ class HeroSection extends StatelessWidget {
                             "Hello, I'm ",
                             style: AppTextStyles.title.copyWith(
                               color: AppColors.primary,
+                              fontSize: MediaQuery.of(context).size.width < 600 ? 24 : 32,
                             ),
                           ),
                           DefaultTextStyle(
-                            style: AppTextStyles.header.copyWith(fontSize: 32),
+                            style: AppTextStyles.header.copyWith(
+                              fontSize: MediaQuery.of(context).size.width < 600 ? 24 : 32,
+                            ),
                             child: AnimatedTextKit(
                               animatedTexts: [
                                 TypewriterAnimatedText(

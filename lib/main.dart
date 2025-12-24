@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/data/data.dart';
 import 'package:my_portfolio/utils/app_colors.dart';
+import 'package:my_portfolio/utils/text_styles.dart';
 import 'package:my_portfolio/views/components/mouse_glow.dart';
 import 'package:my_portfolio/views/sections/hero_section.dart';
 import 'package:my_portfolio/views/sections/skills_section.dart';
@@ -74,10 +76,72 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
     );
   }
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: AppColors.background,
+      endDrawer: Drawer(
+        backgroundColor: AppColors.backgroundLight,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: const BoxDecoration(
+                color: AppColors.background,
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                   const CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage(PortfolioData.avatarUrl),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    PortfolioData.name,
+                    style: AppTextStyles.title.copyWith(fontSize: 18),
+                  ),
+                ],
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home, color: AppColors.primary),
+              title: const Text("Home"),
+              onTap: () {
+                Navigator.pop(context);
+                _scrollToSection(_heroKey);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.work, color: AppColors.primary),
+              title: const Text("Projects"),
+              onTap: () {
+                Navigator.pop(context);
+                _scrollToSection(_projectsKey);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.history_edu, color: AppColors.primary),
+              title: const Text("Experience"),
+              onTap: () {
+                Navigator.pop(context);
+                _scrollToSection(_experienceKey);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.code, color: AppColors.primary),
+              title: const Text("Skills"),
+              onTap: () {
+                Navigator.pop(context);
+                _scrollToSection(_skillsKey);
+              },
+            ),
+          ],
+        ),
+      ),
       body: MouseGlow(
         child: LayoutBuilder(
           builder: (context, constraints) {
@@ -150,7 +214,7 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
                               Icons.menu_rounded,
                               color: AppColors.textPrimary,
                             ),
-                            onPressed: () => _scrollToSection(_heroKey),
+                            onPressed: () => _scaffoldKey.currentState?.openEndDrawer(),
                           ),
                         )
                       : _buildGlassDock(context),
