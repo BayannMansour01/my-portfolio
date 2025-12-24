@@ -219,25 +219,11 @@ class _ProjectCardState extends State<ProjectCard> {
         borderRadius: BorderRadius.circular(32),
         child: Stack(
           children: [
-            Image.network(
+            Image.asset(
               imageUrl,
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
-              loadingBuilder: (context, child, loadingProgress) {
-                if (loadingProgress == null) return child;
-                return Center(
-                  child: CircularProgressIndicator(
-                    color: AppColors.primary.withOpacity(0.5),
-                  ),
-                );
-              },
-              errorBuilder: (context, error, stackTrace) => Container(
-                color: Colors.grey.shade900,
-                child: const Center(
-                  child: Icon(Icons.broken_image, color: Colors.white24),
-                ),
-              ),
             ),
             // Glossy reflection or styling can go here
           ],

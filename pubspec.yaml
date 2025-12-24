@@ -67,6 +67,12 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/projects/manara/
+    - assets/images/projects/daliluna/
+    - assets/images/projects/losgo/
+    - assets/images/projects/daleelie/
+    - assets/images/projects/SMS/
+    - assets/images/projects/academic/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

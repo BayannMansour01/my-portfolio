@@ -110,6 +110,55 @@ class PortfolioData {
   // Projects
   static final List<Project> projects = [
     Project(
+      title: "Manara School Management",
+      description:
+          "A multi-role educational platform digitalizing school operations. Unifies attendance, grading, and communication into a single ecosystem with gamified mechanics to enhance student engagement and transparent parental tracking.",
+      features: [
+        "Gamified Achievement Engine: Robust behavior modification system awarding digital medals/points based on milestones to drive student motivation.",
+        "Real-time Academic Communication: Secure, low-latency messaging architecture for direct role-based interaction between students and teachers.",
+        "Comprehensive Assessment Module: End-to-end management for exams and homework with automated result processing and submission tracking.",
+        "Multi-Dimensional Analytics: Interactive dashboards using fl_chart to visualize progress and attendance for data-driven insights.",
+        "Role-Based Access Control (RBAC): Secure authentication dynamically adapting UI/UX for Students, Teachers, and Parents using GetX state management.",
+      ],
+      screenshots: [
+        "assets/images/projects/manara/manara-1.jpg",
+        "assets/images/projects/manara/manara-2.jpg",
+        "assets/images/projects/manara/manara-3.jpg",
+        "assets/images/projects/manara/manara-4.jpg",
+        "assets/images/projects/manara/manara-5.jpg",
+        "assets/images/projects/manara/manara-6.jpg",
+        "assets/images/projects/manara/manara-7.jpg",
+        "assets/images/projects/manara/manara-8.jpg",
+        "assets/images/projects/manara/manara-9.jpg",
+        "assets/images/projects/manara/manara-10.jpg",
+      ],
+      downloadUrl:
+          'https://drive.google.com/file/d/1Zkp3PiJjfFkgARiO5F7-kOYk_aX7-kdX/view?usp=drive_link',
+    ),
+    Project(
+      title: "Daliluna Altaalimi",
+      description:
+          "A comprehensive mobile LMS connecting students, teachers, and institutes. Unifies interactive course delivery, real-time academic support, and performance tracking into a secure, robust platform for seamless remote education.",
+      features: [
+        "Real-Time Collaborative Engine: High-performance chat via Socket.IO supporting instant multimedia sharing (images, audio, video) for uninterrupted connectivity.",
+        "Dynamic Role-Based Architecture: Secure, multi-faceted navigation adapting UI/UX for Students, Teachers, and Parents to ensure privacy and relevant experiences.",
+        "Immersive Media Player: Integrated Better Player & Just Audio for seamless educational content playback with background support and specialized learning controls.",
+        "Smart Notification System: Responsive alert ecosystem using FCM & Local Notifications to drive engagement with intelligent deep-linking.",
+        "Comprehensive Assessment Module: Secure exam environment with timed testing, automatic grading, and detailed solution reviews for rigorous evaluation.",
+      ],
+      screenshots: [
+        "assets/images/projects/daliluna/daliluna-0.jpg",
+        "assets/images/projects/daliluna/daliluna-1.jpg",
+        "assets/images/projects/daliluna/daliluna-2.jpg",
+        "assets/images/projects/daliluna/daliluna-3.jpg",
+        "assets/images/projects/daliluna/daliluna-4.jpg",
+        "assets/images/projects/daliluna/daliluna-5.jpg",
+        "assets/images/projects/daliluna/daliluna-6.jpg",
+      ],
+      downloadUrl:
+          'https://play.google.com/store/apps/details?id=com.sunrise.daliluna_altaalimi',
+    ),
+    Project(
       title: "LosGo App (Germany)",
       description:
           "A hyper-local logistics and mobility platform connecting users with vetted drivers for on-demand transport and parcel delivery. Features real-time tracking and secure payments, streamlining complex logistics into a seamless mobile experience.",
@@ -121,10 +170,17 @@ class PortfolioData {
         "Smart Offer System: Competitive bidding engine allowing users to broadcast requests and select from real-time driver offers.",
       ],
       screenshots: [
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=LosGo+Login",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=LosGo+Home",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=LosGo+Map",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=LosGo+Profile",
+        "assets/images/projects/losgo/LosGo-1.jpg",
+        "assets/images/projects/losgo/LosGo-2.jpg",
+        "assets/images/projects/losgo/LosGo-3.jpg",
+        "assets/images/projects/losgo/LosGo-4.jpg",
+        "assets/images/projects/losgo/LosGo-5.jpg",
+        "assets/images/projects/losgo/LosGo-6.jpg",
+        "assets/images/projects/losgo/LosGo-7.jpg",
+        "assets/images/projects/losgo/LosGo-8.jpg",
+        "assets/images/projects/losgo/LosGo-9.jpg",
+        "assets/images/projects/losgo/LosGo-10.jpg",
+        "assets/images/projects/losgo/LosGo-11.jpg",
       ],
       // downloadUrl: "https://example.com/losgo",
     ),
@@ -140,11 +196,15 @@ class PortfolioData {
         "Optimized Resource Management: Efficient local caching (Hive/SharedPrefs) to persist sessions and progress, reducing API load.",
       ],
       screenshots: [
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Academic+Home",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Video+Player",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Chat+Room",
+        "assets/images/projects/academic/academic_1.png",
+        "assets/images/projects/academic/academic_2.png",
+        "assets/images/projects/academic/academic_3.png",
+        "assets/images/projects/academic/academic_4.png",
+        "assets/images/projects/academic/academic_5.png",
+        "assets/images/projects/academic/academic_6.png",
+        "assets/images/projects/academic/academic_7.png",
       ],
-      downloadUrl: "https://example.com/losgo",
+      downloadUrl: "https://arabicacademic.com/public/ArabicAcademic.apk",
     ),
     Project(
       title: "Daleelie App",
@@ -158,12 +218,18 @@ class PortfolioData {
         "Global Search: High-performance aggregated search across companies, classifieds, and jobs using optimized API queries.",
       ],
       screenshots: [
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Daleelie+Home",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Ad+Listing",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Exhibitions",
+        "assets/images/projects/daleelie/daleelie-1.jpg",
+        "assets/images/projects/daleelie/daleelie-2.jpg",
+        "assets/images/projects/daleelie/daleelie-3.jpg",
+        "assets/images/projects/daleelie/daleelie-4.jpg",
+        "assets/images/projects/daleelie/daleelie-5.jpg",
+        "assets/images/projects/daleelie/daleelie-6.jpg",
+        "assets/images/projects/daleelie/daleelie-7.jpg",
+        "assets/images/projects/daleelie/daleelie-8.jpg",
       ],
 
-      downloadUrl: "https://example.com/losgo",
+      downloadUrl:
+          "https://drive.google.com/file/d/10CXddFr-SfK21AfQyr8gapLL4GJ-4ZrZ/view?usp=drive_link",
     ),
     Project(
       title: "Modern Syrian School App",
@@ -177,11 +243,15 @@ class PortfolioData {
         "Optimized UX: Integrated Skeletonizer and flutter_screenutil for pixel-perfect responsiveness and smooth loading states.",
       ],
       screenshots: [
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=School+Dash",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Attendance",
-        "https://via.placeholder.com/1080x1920/1a1a1a/FFFFFF?text=Tracking",
+        "assets/images/projects/SMS/SMS-1.jpg",
+        "assets/images/projects/SMS/SMS-2.jpg",
+        "assets/images/projects/SMS/SMS-3.jpg",
+        "assets/images/projects/SMS/SMS-4.jpg",
+        "assets/images/projects/SMS/SMS-5.jpg",
+        "assets/images/projects/SMS/SMS-6.jpg",
       ],
-      downloadUrl: "https://example.com/losgo",
+      downloadUrl:
+          "https://drive.google.com/file/d/1oD7Ze-Wp5fnhkmtfwd09YAH40oMWAds8/view?usp=sharing",
     ),
   ];
 
