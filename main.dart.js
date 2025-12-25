@@ -67061,7 +67061,7 @@ p=A.c([new A.CZ(B.xl,A.fc(A.c([B.yL,B.JF,A.de("Bayan Mansour",A.d0().$3$color$fo
 s=A.aI([null,0],t.LO,t.S)
 return new A.wa(new A.v3(A.aic(new A.aah(r)),q),new A.CX(B.hh,new A.Eh(new A.a34(!0,!0,!0,p,s),B.bx,B.aO,!1,q,q,B.wY,q,!1,q,0,q,5,B.j7,B.an,q,q,B.ac,B.ao,q),q),B.d6,r.x)},
 TP(a){var s=this,r=null,q=A.ad(13,B.i.p()>>>16&255,B.i.p()>>>8&255,B.i.p()&255),p=A.c([A.ad(B.c.ab(127.5),B.i.p()>>>16&255,B.i.p()>>>8&255,B.i.p()&255),B.D,B.q],t.W)
-return A.oG(20,r,30,A.j8(A.c([new A.lc("Home",new A.aa8(s),r),B.ft,new A.lc("Projects",new A.aa9(s),r),B.ft,new A.lc("Experience",new A.aaa(s),r),B.ft,new A.lc("Skills",new A.aab(s),r)],t.D),B.Q,B.X,B.cq,0),q,new A.fm(B.cR,B.cQ,B.aA,p,r,r),B.AH)}}
+return A.oG(20,r,30,A.j8(A.c([new A.lc("Home",new A.aa8(s),r),B.ft,new A.lc("Projects",new A.aa9(s),r),B.ft,new A.lc("Experience",new A.aaa(s),r),B.ft,new A.lc("Skills",new A.aab(s),r)],t.D),B.Q,B.X,B.cq,0),q,new A.fm(B.cR,B.cQ,B.aA,p,r,r),B.AI)}}
 A.aad.prototype={
 $0(){A.EG(this.b).pL(null)
 var s=$.a4.af$.x.i(0,this.a.e)
@@ -67137,7 +67137,7 @@ s=p.d?20:0
 r=A.hq(2)
 q=A.c([],t.sq)
 if(p.d)q.push(new A.d3(0,B.cS,A.ad(153,B.q.p()>>>16&255,B.q.p()>>>8&255,B.q.p()&255),B.j,4))
-return A.p4(A.oF(o,A.fc(A.c([n,B.JK,A.Bi(o,o,B.P,new A.c5(B.q,o,o,r,q,o,B.av),B.ad,o,2,o,o,s)],t.D),B.Q,B.X,B.cq),B.an,!1,o,o,o,o,o,o,o,o,o,o,o,o,o,m,o,o,o),B.bF,new A.a8C(p),new A.a8D(p),o)}}
+return A.p4(A.oF(o,A.fc(A.c([n,B.JJ,A.Bi(o,o,B.P,new A.c5(B.q,o,o,r,q,o,B.av),B.ad,o,2,o,o,s)],t.D),B.Q,B.X,B.cq),B.an,!1,o,o,o,o,o,o,o,o,o,o,o,o,o,m,o,o,o),B.bF,new A.a8C(p),new A.a8D(p),o)}}
 A.a8C.prototype={
 $1(a){var s=this.a
 return s.aD(new A.a8B(s))},
@@ -67212,9 +67212,9 @@ h=t.D
 f=A.c([A.de(f.a,A.d0().$4$color$fontSize$fontWeight$height(B.W,56,B.ae,1.1).a3S(B.q,32,1.2),j),B.vZ,A.de(g.a.c.b,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).t1(16,1.8),j),B.fu],h)
 s=g.a.c.c
 B.b.K(f,new A.a0(s,new A.a9c(),A.X(s).h("a0<1,f>")))
-f.push(B.JL)
+f.push(B.JK)
 if(g.a.c.e!=null){s=A.de("Download App",A.d0().$4$color$fontSize$fontWeight$letterSpacing(B.i,14,B.ae,1.2).fZ(B.q),j)
-r=A.ass(j,j,B.D,j,j,j,j,j,j,j,j,j,B.AI,j,new A.cD(A.hq(50),B.r),B.xd,j,j,j,j)
+r=A.ass(j,j,B.D,j,j,j,j,j,j,j,j,j,B.AJ,j,new A.cD(A.hq(50),B.r),B.xd,j,j,j,j)
 f.push(new A.EV(!0,new A.a9d(g),j,j,j,r,j,j,!1,j,j,new A.L7(s,B.BJ,r,j,j),j))}q=A.fc(f,B.aQ,B.X,B.cq)
 if(i){p=g.a.c.d.length
 o=J.ae4(p,t.l7)
@@ -67222,7 +67222,7 @@ for(g=g.e,n=0;n<p;++n){m=n===g
 f=m?24:8
 s=m?B.q:B.hf
 r=new A.aS(4,4)
-o[n]=A.Bi(j,j,B.P,new A.c5(s,j,j,new A.co(r,r,r,r),j,j,B.av),B.aY,j,8,B.kP,j,f)}return new A.c7(B.Av,A.fc(A.c([e,B.JI,A.j8(o,B.Q,B.cp,B.a4,0),B.vZ,q],h),B.Q,B.X,B.a4),j)}p=g.a.c.d.length
+o[n]=A.Bi(j,j,B.P,new A.c5(s,j,j,new A.co(r,r,r,r),j,j,B.av),B.aY,j,8,B.kP,j,f)}return new A.c7(B.Av,A.fc(A.c([e,B.JH,A.j8(o,B.Q,B.cp,B.a4,0),B.vZ,q],h),B.Q,B.X,B.a4),j)}p=g.a.c.d.length
 o=J.ae4(p,t.l7)
 for(f=g.e,n=0;n<p;++n){m=n===f
 s=m?24:8
@@ -67260,9 +67260,9 @@ o.push(B.fu)
 o.push(this.Eh($.and(),!1))
 s=t.D
 return A.dj(r,A.fc(A.c([q,B.j5,A.jf(B.bJ,A.c([p,A.fc(o,B.Q,B.X,B.a4)],s),B.bj)],s),B.Q,B.X,B.a4),B.v,r,B.fV,r,r,r,r,B.hq,r,r,r)},
-Eh(a,b){var s=null,r=A.aew(A.lx(A.dj(s,s,B.v,s,s,new A.c5(B.d6,s,A.QA(B.q,B.C,3),s,s,s,B.aW),s,14,B.AG,s,s,s,14),s),A.bY(2e5,0)),q=A.c([A.ad(B.c.ab(25.5),B.i.p()>>>16&255,B.i.p()>>>8&255,B.i.p()&255),B.D,A.ad(B.c.ab(127.5),B.q.p()>>>16&255,B.q.p()>>>8&255,B.q.p()&255)],t.W),p=t.D,o=A.c([A.j8(A.c([A.tN(A.de(a.b,A.d0().$3$color$fontSize$fontWeight(B.W,24,B.G).Kr(B.W,22,B.ae),s),1,s),B.JC,A.de(a.c,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).iF(B.q,14),s)],p),B.Q,B.qf,B.a4,0),B.JG,A.de(a.a,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).iF(B.aP,16),s)],p),n=a.d
+Eh(a,b){var s=null,r=A.aew(A.lx(A.dj(s,s,B.v,s,s,new A.c5(B.d6,s,A.QA(B.q,B.C,3),s,s,s,B.aW),s,14,B.AH,s,s,s,14),s),A.bY(2e5,0)),q=A.c([A.ad(B.c.ab(25.5),B.i.p()>>>16&255,B.i.p()>>>8&255,B.i.p()&255),B.D,A.ad(B.c.ab(127.5),B.q.p()>>>16&255,B.q.p()>>>8&255,B.q.p()&255)],t.W),p=t.D,o=A.c([A.de(a.b,A.d0().$3$color$fontSize$fontWeight(B.W,24,B.G).Kr(B.W,22,B.ae),s),B.JN,A.j8(A.c([A.tN(A.de(a.a,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).iF(B.aP,16),s),1,s),B.JC,A.de(a.c,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).iF(B.q,14),s)],p),B.Q,B.qf,B.a4,0)],p),n=a.d
 if(n.length!==0)B.b.K(o,A.c([B.j4,A.de(n,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).t1(16,1.5),s)],p))
-q=A.k4(A.lx(A.tN(A.oG(15,s,24,A.fc(o,B.aQ,B.X,B.a4),s,new A.fm(B.cR,B.cQ,B.aA,q,s,s),B.AJ),1,s),s),s,A.bY(5e5,0))
+q=A.k4(A.lx(A.tN(A.oG(15,s,24,A.fc(o,B.aQ,B.X,B.a4),s,new A.fm(B.cR,B.cQ,B.aA,q,s,s),B.AF),1,s),s),s,A.bY(5e5,0))
 return new A.c7(B.As,A.j8(A.c([r,B.ft,q.kt(A.ajy(A.ZF(B.j,0.1,s),s,s,s,A.ZF(B.j,0,s)))],p),B.aQ,B.X,B.a4,0),s)}}
 A.Tg.prototype={
 $1(a){return this.a.Eh(a,!0)},
@@ -67281,11 +67281,11 @@ k=A.de("Hello, I'm ",k.iF(B.q,A.bJ(a,r,p).w.a.a<600?24:32),r)
 s=A.d0().$4$color$fontSize$fontWeight$height(B.W,56,B.ae,1.1)
 s=s.z8(A.bJ(a,r,p).w.a.a<600?24:32)
 p=B.h.ab(1e5*(new A.h2(q).gB(0)+8))
-p=A.oG(15,r,24,A.fc(A.c([A.I7(B.cK,A.c([k,A.RX(new A.ry(A.c([new A.xu(B.bb,q,B.aJ,r,new A.aB(p),new A.h2(q))],t.u6),!1,r),r,B.c8,!0,s,r,r,B.aK)],n),B.wt,0,0),B.JH,A.de("Software Engineer | Flutter Developer",A.d0().$4$color$fontSize$fontWeight$height(B.W,32,B.cm,1.2).iF(B.aP,20),B.cG),B.j4,A.de("Passionate Software Engineer with a strong focus on scalable Flutter architectures and cross-platform solutions. Dedicated to building robust mobile ecosystems, from hyper-local logistics to complex educational platforms. Skilled in Clean Architecture, state management, and seamless backend integration.",A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).t1(16,1.6),B.cG)],n),B.Q,B.X,B.a4),r,new A.fm(B.cR,B.cQ,B.aA,l,r,r),B.AK)
+p=A.oG(15,r,24,A.fc(A.c([A.I7(B.cK,A.c([k,A.RX(new A.ry(A.c([new A.xu(B.bb,q,B.aJ,r,new A.aB(p),new A.h2(q))],t.u6),!1,r),r,B.c8,!0,s,r,r,B.aK)],n),B.wt,0,0),B.JG,A.de("Software Engineer | Flutter Developer",A.d0().$4$color$fontSize$fontWeight$height(B.W,32,B.cm,1.2).iF(B.aP,20),B.cG),B.j4,A.de("Passionate Software Engineer with a strong focus on scalable Flutter architectures and cross-platform solutions. Dedicated to building robust mobile ecosystems, from hyper-local logistics to complex educational platforms. Skilled in Clean Architecture, state management, and seamless backend integration.",A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).t1(16,1.6),B.cG)],n),B.Q,B.X,B.a4),r,new A.fm(B.cR,B.cQ,B.aA,l,r,r),B.AK)
 l=$.ang()
 k=A.X(l).h("a0<1,c7>")
 l=A.V(new A.a0(l,new A.UH(this),k),k.h("am.E"))
-return new A.c7(B.AE,A.dj(r,A.agQ(new A.H2(A.fc(A.c([m,B.JM,p,B.JJ,A.I7(B.cK,l,B.dV,0,0)],n),B.Q,B.cp,B.a4),r),r,r),B.v,r,new A.ah(0,1/0,o.a.b,1/0),r,r,r,r,r,r,r,1/0),r)},
+return new A.c7(B.AE,A.dj(r,A.agQ(new A.H2(A.fc(A.c([m,B.JL,p,B.JI,A.I7(B.cK,l,B.dV,0,0)],n),B.Q,B.cp,B.a4),r),r,r),B.v,r,new A.ah(0,1/0,o.a.b,1/0),r,r,r,r,r,r,r,1/0),r)},
 TV(){return new A.pX(new A.at(0,1,t.Y),new A.UE(),B.P,B.An,new A.UF(),null,t.HN)}}
 A.UH.prototype={
 $1(a){var s=null
@@ -67304,7 +67304,7 @@ $S:0}
 A.E6.prototype={
 P(a){var s=null,r=A.wG(A.k4(A.lx(A.de("Languages",A.d0().$4$color$fontSize$fontWeight$height(B.W,56,B.ae,1.1).iF(B.W,40),s),s),s,s),0.2,0),q=A.X($.aiS).h("a0<1,f>")
 q=A.V(new A.a0($.aiS,new A.VO(this),q),q.h("am.E"))
-return A.dj(s,A.fc(A.c([r,B.fu,A.I7(B.cK,A.aew(A.k4(A.adc(q,A.bY(5e4,0)),s,s),s),B.dV,16,16)],t.D),B.Q,B.X,B.a4),B.v,s,B.fV,s,s,s,s,B.AF,s,s,s)}}
+return A.dj(s,A.fc(A.c([r,B.fu,A.I7(B.cK,A.aew(A.k4(A.adc(q,A.bY(5e4,0)),s,s),s),B.dV,16,16)],t.D),B.Q,B.X,B.a4),B.v,s,B.fV,s,s,s,s,B.AG,s,s,s)}}
 A.VO.prototype={
 $1(a){var s=null,r=A.c([A.ad(B.c.ab(25.5),B.i.p()>>>16&255,B.i.p()>>>8&255,B.i.p()&255),B.D,A.ad(102,B.im.p()>>>16&255,B.im.p()>>>8&255,B.im.p()&255)],t.W)
 return A.oG(15,s,50,A.de(a,A.d0().$4$color$fontSize$fontWeight$height(B.aP,16,B.k,1.5).Kr(B.W,16,B.ae),s),s,new A.fm(B.cR,B.cQ,B.aA,r,s,s),B.kO)},
@@ -70409,12 +70409,12 @@ B.AC=new A.aM(16,16,16,8)
 B.AD=new A.aM(20,12,20,12)
 B.AE=new A.aM(20,20,20,20)
 B.kO=new A.aM(24,16,24,16)
-B.AF=new A.aM(24,40,24,40)
+B.AF=new A.aM(24,24,24,24)
+B.AG=new A.aM(24,40,24,40)
 B.hq=new A.aM(24,60,24,60)
-B.AG=new A.aM(24,8,0,0)
-B.AH=new A.aM(32,12,32,12)
-B.AI=new A.aM(40,22,40,22)
-B.AJ=new A.aM(40,40,40,40)
+B.AH=new A.aM(24,8,0,0)
+B.AI=new A.aM(32,12,32,12)
+B.AJ=new A.aM(40,22,40,22)
 B.AK=new A.aM(48,32,48,32)
 B.kP=new A.aM(4,0,4,0)
 B.AM=new A.aM(1.5,1.5,1.5,1.5)
@@ -71939,17 +71939,17 @@ B.ft=new A.cd(32,null,null,null)
 B.JB=new A.cd(80,null,null,null)
 B.JC=new A.cd(8,null,null,null)
 B.JF=new A.cd(null,10,null,null)
-B.JG=new A.cd(null,12,null,null)
-B.JH=new A.cd(null,16,null,null)
-B.JI=new A.cd(null,20,null,null)
+B.JG=new A.cd(null,16,null,null)
+B.JH=new A.cd(null,20,null,null)
 B.j4=new A.cd(null,24,null,null)
 B.vZ=new A.cd(null,32,null,null)
 B.fu=new A.cd(null,40,null,null)
-B.JJ=new A.cd(null,48,null,null)
-B.JK=new A.cd(null,4,null,null)
-B.JL=new A.cd(null,50,null,null)
-B.JM=new A.cd(null,56,null,null)
+B.JI=new A.cd(null,48,null,null)
+B.JJ=new A.cd(null,4,null,null)
+B.JK=new A.cd(null,50,null,null)
+B.JL=new A.cd(null,56,null,null)
 B.j5=new A.cd(null,60,null,null)
+B.JN=new A.cd(null,8,null,null)
 B.JO=new A.H6(null)
 B.JP=new A.wH(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.j6=new A.Hc(0,0,0,0,0,0,!1,!1,null,0)
@@ -71958,8 +71958,8 @@ B.JQ=new A.wJ(B.Au,null,null)
 B.j7=new A.a3a(0,"firstIsTop")
 B.Cl=new A.E6(null)
 B.JR=new A.i4(B.Cl,null)
-B.JN=new A.cd(null,80,null,null)
-B.fv=new A.i4(B.JN,null)
+B.JM=new A.cd(null,80,null,null)
+B.fv=new A.i4(B.JM,null)
 B.JE=new A.cd(null,100,null,null)
 B.JS=new A.i4(B.JE,null)
 B.JT=new A.wM(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
