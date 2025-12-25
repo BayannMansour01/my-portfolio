@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:my_portfolio/data/data.dart';
 import 'package:my_portfolio/utils/app_colors.dart';
 import 'package:my_portfolio/utils/text_styles.dart';

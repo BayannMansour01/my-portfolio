@@ -79,7 +79,9 @@ class ExperienceSection extends StatelessWidget {
           // Card
           Expanded(
             child: GlassContainer(
-              padding: const EdgeInsets.all(40), // Increased padding to 40
+              padding: const EdgeInsets.all(
+                24,
+              ), // Reduced padding for better mobile fit
               borderRadius: 24,
               gradientBorder: LinearGradient(
                 colors: [
@@ -93,17 +95,29 @@ class ExperienceSection extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Company Name (Prominent)
+                  Text(
+                    exp.result,
+                    style: AppTextStyles.title.copyWith(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.textPrimary,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ), // Spacing between company and role/duration
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Company Name (Prominent)
+                      // Role
                       Expanded(
                         child: Text(
-                          exp.result,
-                          style: AppTextStyles.title.copyWith(
-                            fontSize: 22, // Slightly larger
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.textPrimary,
+                          exp.role,
+                          style: AppTextStyles.body.copyWith(
+                            fontSize: 16,
+                            color: AppColors.textSecondary,
                           ),
                         ),
                       ),
@@ -116,15 +130,6 @@ class ExperienceSection extends StatelessWidget {
                         ),
                       ),
                     ],
-                  ),
-                  const SizedBox(height: 12),
-                  // Role
-                  Text(
-                    exp.role,
-                    style: AppTextStyles.body.copyWith(
-                      fontSize: 16,
-                      color: AppColors.textSecondary,
-                    ),
                   ),
 
                   if (exp.description.isNotEmpty) ...[

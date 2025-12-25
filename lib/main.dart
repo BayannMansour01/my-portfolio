@@ -89,13 +89,11 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: const BoxDecoration(
-                color: AppColors.background,
-              ),
+              decoration: const BoxDecoration(color: AppColors.background),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   const CircleAvatar(
+                  const CircleAvatar(
                     radius: 40,
                     backgroundImage: AssetImage(PortfolioData.avatarUrl),
                   ),
@@ -214,7 +212,8 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
                               Icons.menu_rounded,
                               color: AppColors.textPrimary,
                             ),
-                            onPressed: () => _scaffoldKey.currentState?.openEndDrawer(),
+                            onPressed: () =>
+                                _scaffoldKey.currentState?.openEndDrawer(),
                           ),
                         )
                       : _buildGlassDock(context),
