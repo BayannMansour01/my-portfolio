@@ -156,7 +156,6 @@ class PortfolioData {
         "assets/images/projects/daleelie/daleelie-7.jpg",
         "assets/images/projects/daleelie/daleelie-8.jpg",
       ],
-
       downloadUrl:
           "https://drive.google.com/file/d/10CXddFr-SfK21AfQyr8gapLL4GJ-4ZrZ/view?usp=drive_link",
     ),
