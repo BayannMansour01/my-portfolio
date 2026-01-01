@@ -19,6 +19,7 @@ jobs:
 
       - run: flutter pub get
       - run: flutter build web --release --base-href "/my-portfolio/"
+      - run: cp build/web/index.html build/web/404.html
       - run: touch build/web/.nojekyll
 
       - name: Deploy
