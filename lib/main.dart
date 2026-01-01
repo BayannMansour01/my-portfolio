@@ -156,46 +156,57 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
                 ),
 
                 // 1. Main Scroll View
-                CustomScrollView(
-                  controller: _scrollController,
-                  slivers: [
-                    // Top Padding to prevent content from being hidden behind the top navbar
-                    const SliverPadding(padding: EdgeInsets.only(top: 100)),
-
-                    SliverToBoxAdapter(
-                      key: _heroKey,
-                      child: const HeroSection(),
+                RefreshIndicator(
+                  color: AppColors.primary,
+                  backgroundColor: AppColors.backgroundLight,
+                  onRefresh: () async {
+                    await Future.delayed(const Duration(milliseconds: 1500));
+                    if (context.mounted) setState(() {});
+                  },
+                  child: CustomScrollView(
+                    physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics(),
                     ),
-
-                    // Big Spacer
-                    const SliverToBoxAdapter(child: SizedBox(height: 80)),
-
-                    SliverToBoxAdapter(
-                      key: _projectsKey,
-                      child: const ProjectsSection(),
-                    ),
-
-                    // Big Spacer
-                    const SliverToBoxAdapter(child: SizedBox(height: 80)),
-
-                    SliverToBoxAdapter(
-                      key: _experienceKey,
-                      child: const ExperienceSection(),
-                    ),
-
-                    // Big Spacer
-                    const SliverToBoxAdapter(child: SizedBox(height: 80)),
-
-                    SliverToBoxAdapter(
-                      key: _skillsKey,
-                      child: const SkillsSection(),
-                    ),
-
-                    const SliverToBoxAdapter(child: SizedBox(height: 80)),
-
-                    const SliverToBoxAdapter(child: LanguagesSection()),
-                    const SliverToBoxAdapter(child: SizedBox(height: 100)),
-                  ],
+                    controller: _scrollController,
+                    slivers: [
+                      // Top Padding to prevent content from being hidden behind the top navbar
+                      const SliverPadding(padding: EdgeInsets.only(top: 100)),
+  
+                      SliverToBoxAdapter(
+                        key: _heroKey,
+                        child: const HeroSection(),
+                      ),
+  
+                      // Big Spacer
+                      const SliverToBoxAdapter(child: SizedBox(height: 80)),
+  
+                      SliverToBoxAdapter(
+                        key: _projectsKey,
+                        child: const ProjectsSection(),
+                      ),
+  
+                      // Big Spacer
+                      const SliverToBoxAdapter(child: SizedBox(height: 80)),
+  
+                      SliverToBoxAdapter(
+                        key: _experienceKey,
+                        child: const ExperienceSection(),
+                      ),
+  
+                      // Big Spacer
+                      const SliverToBoxAdapter(child: SizedBox(height: 80)),
+  
+                      SliverToBoxAdapter(
+                        key: _skillsKey,
+                        child: const SkillsSection(),
+                      ),
+  
+                      const SliverToBoxAdapter(child: SizedBox(height: 80)),
+  
+                      const SliverToBoxAdapter(child: LanguagesSection()),
+                      const SliverToBoxAdapter(child: SizedBox(height: 100)),
+                    ],
+                  ),
                 ),
 
                 // 2. Navigation Dock (Positioned correctly inside Stack)
