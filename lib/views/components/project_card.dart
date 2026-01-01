@@ -220,7 +220,7 @@ class _ProjectCardState extends State<ProjectCard> {
           children: [
             Image.asset(
               imageUrl,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
               height: double.infinity,
               width: double.infinity,
             ),

@@ -110,55 +110,6 @@ class PortfolioData {
   // Projects
   static final List<Project> projects = [
     Project(
-      title: "Manara School Management",
-      description:
-          "A multi-role educational platform digitalizing school operations. Unifies attendance, grading, and communication into a single ecosystem with gamified mechanics to enhance student engagement and transparent parental tracking.",
-      features: [
-        "Gamified Achievement Engine: Robust behavior modification system awarding digital medals/points based on milestones to drive student motivation.",
-        "Real-time Academic Communication: Secure, low-latency messaging architecture for direct role-based interaction between students and teachers.",
-        "Comprehensive Assessment Module: End-to-end management for exams and homework with automated result processing and submission tracking.",
-        "Multi-Dimensional Analytics: Interactive dashboards using fl_chart to visualize progress and attendance for data-driven insights.",
-        "Role-Based Access Control (RBAC): Secure authentication dynamically adapting UI/UX for Students, Teachers, and Parents using GetX state management.",
-      ],
-      screenshots: [
-        "assets/images/projects/manara/manara-1.jpg",
-        "assets/images/projects/manara/manara-2.jpg",
-        "assets/images/projects/manara/manara-3.jpg",
-        "assets/images/projects/manara/manara-4.jpg",
-        "assets/images/projects/manara/manara-5.jpg",
-        "assets/images/projects/manara/manara-6.jpg",
-        "assets/images/projects/manara/manara-7.jpg",
-        "assets/images/projects/manara/manara-8.jpg",
-        "assets/images/projects/manara/manara-9.jpg",
-        "assets/images/projects/manara/manara-10.jpg",
-      ],
-      downloadUrl:
-          'https://drive.google.com/file/d/1Zkp3PiJjfFkgARiO5F7-kOYk_aX7-kdX/view?usp=drive_link',
-    ),
-    Project(
-      title: "Daliluna Altaalimi",
-      description:
-          "A comprehensive mobile LMS connecting students, teachers, and institutes. Unifies interactive course delivery, real-time academic support, and performance tracking into a secure, robust platform for seamless remote education.",
-      features: [
-        "Real-Time Collaborative Engine: High-performance chat via Socket.IO supporting instant multimedia sharing (images, audio, video) for uninterrupted connectivity.",
-        "Dynamic Role-Based Architecture: Secure, multi-faceted navigation adapting UI/UX for Students, Teachers, and Parents to ensure privacy and relevant experiences.",
-        "Immersive Media Player: Integrated Better Player & Just Audio for seamless educational content playback with background support and specialized learning controls.",
-        "Smart Notification System: Responsive alert ecosystem using FCM & Local Notifications to drive engagement with intelligent deep-linking.",
-        "Comprehensive Assessment Module: Secure exam environment with timed testing, automatic grading, and detailed solution reviews for rigorous evaluation.",
-      ],
-      screenshots: [
-        "assets/images/projects/daliluna/daliluna-0.jpg",
-        "assets/images/projects/daliluna/daliluna-1.jpg",
-        "assets/images/projects/daliluna/daliluna-2.jpg",
-        "assets/images/projects/daliluna/daliluna-3.jpg",
-        "assets/images/projects/daliluna/daliluna-4.jpg",
-        "assets/images/projects/daliluna/daliluna-5.jpg",
-        "assets/images/projects/daliluna/daliluna-6.jpg",
-      ],
-      downloadUrl:
-          'https://play.google.com/store/apps/details?id=com.sunrise.daliluna_altaalimi',
-    ),
-    Project(
       title: "LosGo App (Germany)",
       description:
           "A hyper-local logistics and mobility platform connecting users with vetted drivers for on-demand transport and parcel delivery. Features real-time tracking and secure payments, streamlining complex logistics into a seamless mobile experience.",
@@ -183,28 +134,6 @@ class PortfolioData {
         "assets/images/projects/losgo/LosGo-11.jpg",
       ],
       // downloadUrl: "https://example.com/losgo",
-    ),
-    Project(
-      title: "Arabic Academic App (Syria)",
-      description:
-          "A cross-platform e-learning ecosystem empowering teachers and students with video lectures, assessments, and real-time collaboration. Bridges the remote education gap through offline capabilities and a robust assessment engine.",
-      features: [
-        "Real-time Communication: Low-latency chat via Socket.IO/WebSockets with deep-linked local notifications for instant updates.",
-        "Offline Media Engine: Resilient download manager using Dio & FFmpeg to mux audio/video streams for high-quality offline playback.",
-        "Dynamic Assessments: Comprehensive testing suite with real-time scoring and performance tracking, managed by reactive state.",
-        "Role-Based Access (RBAC): Secure, distinct navigation for Students & Teachers using GetX Middleware for permission management.",
-        "Optimized Resource Management: Efficient local caching (Hive/SharedPrefs) to persist sessions and progress, reducing API load.",
-      ],
-      screenshots: [
-        "assets/images/projects/academic/academic-1.jpg",
-        "assets/images/projects/academic/academic-2.jpg",
-        "assets/images/projects/academic/academic-3.jpg",
-        "assets/images/projects/academic/academic-4.jpg",
-        "assets/images/projects/academic/academic-5.jpg",
-        "assets/images/projects/academic/academic-6.jpg",
-        "assets/images/projects/academic/academic-7.jpg",
-      ],
-      downloadUrl: "https://arabicacademic.com/public/ArabicAcademic.apk",
     ),
     Project(
       title: "Daleelie App",
@@ -232,6 +161,29 @@ class PortfolioData {
           "https://drive.google.com/file/d/10CXddFr-SfK21AfQyr8gapLL4GJ-4ZrZ/view?usp=drive_link",
     ),
     Project(
+      title: "Daliluna Altaalimi",
+      description:
+          "A comprehensive mobile LMS connecting students, teachers, and institutes. Unifies interactive course delivery, real-time academic support, and performance tracking into a secure, robust platform for seamless remote education.",
+      features: [
+        "Real-Time Collaborative Engine: High-performance chat via Socket.IO supporting instant multimedia sharing (images, audio, video) for uninterrupted connectivity.",
+        "Dynamic Role-Based Architecture: Secure, multi-faceted navigation adapting UI/UX for Students, Teachers, and Parents to ensure privacy and relevant experiences.",
+        "Immersive Media Player: Integrated Better Player & Just Audio for seamless educational content playback with background support and specialized learning controls.",
+        "Smart Notification System: Responsive alert ecosystem using FCM & Local Notifications to drive engagement with intelligent deep-linking.",
+        "Comprehensive Assessment Module: Secure exam environment with timed testing, automatic grading, and detailed solution reviews for rigorous evaluation.",
+      ],
+      screenshots: [
+        "assets/images/projects/daliluna/daliluna-0.jpg",
+        "assets/images/projects/daliluna/daliluna-1.jpg",
+        "assets/images/projects/daliluna/daliluna-2.jpg",
+        "assets/images/projects/daliluna/daliluna-3.jpg",
+        "assets/images/projects/daliluna/daliluna-4.jpg",
+        "assets/images/projects/daliluna/daliluna-5.jpg",
+        "assets/images/projects/daliluna/daliluna-6.jpg",
+      ],
+      downloadUrl:
+          'https://play.google.com/store/apps/details?id=com.sunrise.daliluna_altaalimi',
+    ),
+    Project(
       title: "Modern Syrian School App",
       description:
           "A robust School Management System acting as a digital liaison for parents and administration. Handles complex academic data and real-time tracking within a secure, scalable, and bilingual interface.",
@@ -253,6 +205,54 @@ class PortfolioData {
       downloadUrl:
           "https://drive.google.com/file/d/1oD7Ze-Wp5fnhkmtfwd09YAH40oMWAds8/view?usp=sharing",
     ),
+    // Project(
+    //   title: "Manara School Management",
+    //   description:
+    //       "A multi-role educational platform digitalizing school operations. Unifies attendance, grading, and communication into a single ecosystem with gamified mechanics to enhance student engagement and transparent parental tracking.",
+    //   features: [
+    //     "Gamified Achievement Engine: Robust behavior modification system awarding digital medals/points based on milestones to drive student motivation.",
+    //     "Real-time Academic Communication: Secure, low-latency messaging architecture for direct role-based interaction between students and teachers.",
+    //     "Comprehensive Assessment Module: End-to-end management for exams and homework with automated result processing and submission tracking.",
+    //     "Multi-Dimensional Analytics: Interactive dashboards using fl_chart to visualize progress and attendance for data-driven insights.",
+    //     "Role-Based Access Control (RBAC): Secure authentication dynamically adapting UI/UX for Students, Teachers, and Parents using GetX state management.",
+    //   ],
+    //   screenshots: [
+    //     "assets/images/projects/manara/manara-1.jpg",
+    //     "assets/images/projects/manara/manara-2.jpg",
+    //     "assets/images/projects/manara/manara-3.jpg",
+    //     "assets/images/projects/manara/manara-4.jpg",
+    //     "assets/images/projects/manara/manara-5.jpg",
+    //     "assets/images/projects/manara/manara-6.jpg",
+    //     "assets/images/projects/manara/manara-7.jpg",
+    //     "assets/images/projects/manara/manara-8.jpg",
+    //     "assets/images/projects/manara/manara-9.jpg",
+    //     "assets/images/projects/manara/manara-10.jpg",
+    //   ],
+    //   downloadUrl:
+    //       'https://drive.google.com/file/d/1Zkp3PiJjfFkgARiO5F7-kOYk_aX7-kdX/view?usp=drive_link',
+    // ),
+    // Project(
+    //   title: "Arabic Academic App (Syria)",
+    //   description:
+    //       "A cross-platform e-learning ecosystem empowering teachers and students with video lectures, assessments, and real-time collaboration. Bridges the remote education gap through offline capabilities and a robust assessment engine.",
+    //   features: [
+    //     "Real-time Communication: Low-latency chat via Socket.IO/WebSockets with deep-linked local notifications for instant updates.",
+    //     "Offline Media Engine: Resilient download manager using Dio & FFmpeg to mux audio/video streams for high-quality offline playback.",
+    //     "Dynamic Assessments: Comprehensive testing suite with real-time scoring and performance tracking, managed by reactive state.",
+    //     "Role-Based Access (RBAC): Secure, distinct navigation for Students & Teachers using GetX Middleware for permission management.",
+    //     "Optimized Resource Management: Efficient local caching (Hive/SharedPrefs) to persist sessions and progress, reducing API load.",
+    //   ],
+    //   screenshots: [
+    //     "assets/images/projects/academic/academic-1.jpg",
+    //     "assets/images/projects/academic/academic-2.jpg",
+    //     "assets/images/projects/academic/academic-3.jpg",
+    //     "assets/images/projects/academic/academic-4.jpg",
+    //     "assets/images/projects/academic/academic-5.jpg",
+    //     "assets/images/projects/academic/academic-6.jpg",
+    //     "assets/images/projects/academic/academic-7.jpg",
+    //   ],
+    //   downloadUrl: "https://arabicacademic.com/public/ArabicAcademic.apk",
+    // ),
   ];
 
   // Skills
