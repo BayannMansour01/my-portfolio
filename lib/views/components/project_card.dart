@@ -110,34 +110,66 @@ class _ProjectCardState extends State<ProjectCard> {
               ),
             ),
 
+
             const SizedBox(height: 50),
 
-            // Download Button
-            if (widget.project.downloadUrl != null)
-              OutlinedButton.icon(
-                onPressed: () => _launchUrl(widget.project.downloadUrl!),
-                icon: const Icon(
-                  Icons.download_rounded,
-                  color: AppColors.primary,
-                ),
-                label: Text(
-                  "Download App",
-                  style: AppTextStyles.button.copyWith(
-                    color: AppColors.primary,
+            // Download Buttons
+            Wrap(
+              spacing: 16,
+              runSpacing: 16,
+              children: [
+                if (widget.project.androidUrl != null)
+                  OutlinedButton.icon(
+                    onPressed: () => _launchUrl(widget.project.androidUrl!),
+                    icon: const Icon(
+                      Icons.android,
+                      color: AppColors.primary,
+                    ),
+                    label: Text(
+                      "Download Android",
+                      style: AppTextStyles.button.copyWith(
+                        color: AppColors.primary,
+                      ),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: AppColors.primary, width: 2),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 22,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      backgroundColor: Colors.transparent,
+                    ),
                   ),
-                ),
-                style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: AppColors.primary, width: 2),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 40,
-                    vertical: 22,
+                if (widget.project.iosUrl != null)
+                  OutlinedButton.icon(
+                    onPressed: () => _launchUrl(widget.project.iosUrl!),
+                    icon: const Icon(
+                      Icons.apple,
+                      color: AppColors.primary,
+                    ),
+                    label: Text(
+                      "Download iOS",
+                      style: AppTextStyles.button.copyWith(
+                        color: AppColors.primary,
+                      ),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: AppColors.primary, width: 2),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 22,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      backgroundColor: Colors.transparent,
+                    ),
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  backgroundColor: Colors.transparent,
-                ),
-              ),
+              ],
+            ),
           ],
         );
 

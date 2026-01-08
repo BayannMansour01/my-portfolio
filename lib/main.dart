@@ -33,13 +33,12 @@ class MyApp extends StatelessWidget {
           surface: AppColors.backgroundLight,
           background: AppColors.background,
         ),
-        textTheme:
-            GoogleFonts.jetBrainsMonoTextTheme(
-              Theme.of(context).textTheme,
-            ).apply(
-              bodyColor: AppColors.textPrimary,
-              displayColor: AppColors.textPrimary,
-            ),
+        textTheme: GoogleFonts.jetBrainsMonoTextTheme(
+          Theme.of(context).textTheme,
+        ).apply(
+          bodyColor: AppColors.textPrimary,
+          displayColor: AppColors.textPrimary,
+        ),
         useMaterial3: true,
       ),
       home: const ScrollyPortfolioHome(),
@@ -171,38 +170,38 @@ class _ScrollyPortfolioHomeState extends State<ScrollyPortfolioHome> {
                     slivers: [
                       // Top Padding to prevent content from being hidden behind the top navbar
                       const SliverPadding(padding: EdgeInsets.only(top: 100)),
-  
+
                       SliverToBoxAdapter(
                         key: _heroKey,
                         child: const HeroSection(),
                       ),
-  
+
                       // Big Spacer
                       const SliverToBoxAdapter(child: SizedBox(height: 80)),
-  
+
                       SliverToBoxAdapter(
                         key: _projectsKey,
                         child: const ProjectsSection(),
                       ),
-  
+
                       // Big Spacer
                       const SliverToBoxAdapter(child: SizedBox(height: 80)),
-  
+
                       SliverToBoxAdapter(
                         key: _experienceKey,
                         child: const ExperienceSection(),
                       ),
-  
+
                       // Big Spacer
                       const SliverToBoxAdapter(child: SizedBox(height: 80)),
-  
+
                       SliverToBoxAdapter(
                         key: _skillsKey,
                         child: const SkillsSection(),
                       ),
-  
+
                       const SliverToBoxAdapter(child: SizedBox(height: 80)),
-  
+
                       const SliverToBoxAdapter(child: LanguagesSection()),
                       const SliverToBoxAdapter(child: SizedBox(height: 100)),
                     ],

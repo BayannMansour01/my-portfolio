@@ -7,14 +7,16 @@ class Project {
   final String description;
   final List<String> features;
   final List<String> screenshots; // Changed from imageUrl
-  final String? downloadUrl;
+  final String? androidUrl;
+  final String? iosUrl;
 
   Project({
     required this.title,
     required this.description,
     required this.features,
     required this.screenshots,
-    this.downloadUrl,
+    this.androidUrl,
+    this.iosUrl,
   });
 }
 
@@ -77,7 +79,7 @@ class PortfolioData {
     SocialLink(
       name: "GitLab",
       icon: FontAwesomeIcons.gitlab,
-      url: "https://gitlab.com/BayannMansour",
+      url: "https://gitlab.com/bayannmansourr",
     ), // Add correct GitLab URL if known, assuming standard pattern or placeholder
     SocialLink(
       name: "Email",
@@ -133,7 +135,6 @@ class PortfolioData {
         "assets/images/projects/losgo/LosGo-10.jpg",
         "assets/images/projects/losgo/LosGo-11.jpg",
       ],
-      // downloadUrl: "https://example.com/losgo",
     ),
     Project(
       title: "Daleelie App",
@@ -156,7 +157,7 @@ class PortfolioData {
         "assets/images/projects/daleelie/daleelie-7.jpg",
         "assets/images/projects/daleelie/daleelie-8.jpg",
       ],
-      downloadUrl:
+      androidUrl:
           "https://drive.google.com/file/d/10CXddFr-SfK21AfQyr8gapLL4GJ-4ZrZ/view?usp=drive_link",
     ),
     Project(
@@ -179,7 +180,7 @@ class PortfolioData {
         "assets/images/projects/daliluna/daliluna-5.jpg",
         "assets/images/projects/daliluna/daliluna-6.jpg",
       ],
-      downloadUrl:
+      androidUrl:
           'https://play.google.com/store/apps/details?id=com.sunrise.daliluna_altaalimi',
     ),
     Project(
@@ -201,8 +202,10 @@ class PortfolioData {
         "assets/images/projects/SMS/SMS-5.jpg",
         "assets/images/projects/SMS/SMS-6.jpg",
       ],
-      downloadUrl:
+      androidUrl:
           "https://drive.google.com/file/d/1oD7Ze-Wp5fnhkmtfwd09YAH40oMWAds8/view?usp=sharing",
+      iosUrl:
+          "https://apps.apple.com/de/app/modern-syrian-school/id6757386065?l=en-GB",
     ),
     // Project(
     //   title: "Manara School Management",
