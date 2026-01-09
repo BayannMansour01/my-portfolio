@@ -18,7 +18,7 @@ jobs:
           channel: "stable"
 
       - run: flutter pub get
-      - run: flutter build web --release --base-href "/my-portfolio/"
+      - run: flutter build web --release --web-renderer html --base-href "/my-portfolio/"
       - run: cp build/web/index.html build/web/404.html
       - run: touch build/web/.nojekyll
 
