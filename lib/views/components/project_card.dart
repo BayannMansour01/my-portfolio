@@ -110,7 +110,6 @@ class _ProjectCardState extends State<ProjectCard> {
               ),
             ),
 
-
             const SizedBox(height: 50),
 
             // Download Buttons
@@ -132,7 +131,8 @@ class _ProjectCardState extends State<ProjectCard> {
                       ),
                     ),
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: AppColors.primary, width: 2),
+                      side:
+                          const BorderSide(color: AppColors.primary, width: 2),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 22,
@@ -157,7 +157,8 @@ class _ProjectCardState extends State<ProjectCard> {
                       ),
                     ),
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: AppColors.primary, width: 2),
+                      side:
+                          const BorderSide(color: AppColors.primary, width: 2),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 22,
@@ -232,32 +233,83 @@ class _ProjectCardState extends State<ProjectCard> {
     );
   }
 
-  Widget _buildPhoneFrame(String imageUrl) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(40),
-        border: Border.all(color: Colors.grey.shade800, width: 8),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.5),
-            blurRadius: 30,
-            offset: const Offset(0, 20),
+  void _showFullScreenImage(BuildContext context, String imageUrl) {
+    showDialog(
+      context: context,
+      barrierColor: Colors.black.withOpacity(0.9),
+      builder: (context) => Stack(
+        children: [
+          InteractiveViewer(
+            minScale: 0.5,
+            maxScale: 4.0,
+            child: Center(
+              child: Image.asset(
+                imageUrl,
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 40,
+            right: 20,
+            child: IconButton(
+              icon: const Icon(Icons.close, color: Colors.white, size: 30),
+              onPressed: () => Navigator.pop(context),
+            ),
           ),
         ],
       ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(32),
-        child: Stack(
-          children: [
-            Image.asset(
-              imageUrl,
-              fit: BoxFit.fill,
-              height: double.infinity,
-              width: double.infinity,
+    );
+  }
+
+  Widget _buildPhoneFrame(String imageUrl) {
+    return GestureDetector(
+      onTap: () => _showFullScreenImage(context, imageUrl),
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.circular(40),
+            border: Border.all(color: Colors.grey.shade800, width: 8),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.5),
+                blurRadius: 30,
+                offset: const Offset(0, 20),
+              ),
+            ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(32),
+            child: Stack(
+              children: [
+                Image.asset(
+                  imageUrl,
+                  fit: BoxFit.fill,
+                  height: double.infinity,
+                  width: double.infinity,
+                ),
+                // Glossy reflection or styling can go here
+
+                // Hint overlay on hover (optional, but good for UX)
+                Positioned.fill(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.transparent,
+                          Colors.black.withOpacity(0.0),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-            // Glossy reflection or styling can go here
-          ],
+          ),
         ),
       ),
     );
