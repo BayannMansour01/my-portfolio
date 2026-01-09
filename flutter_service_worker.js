@@ -9,8 +9,8 @@ const RESOURCES = {"flutter.js": "4b2350e14c6650ba82871f60906437ea",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "manifest.json": "4d014b0c0b61e5592def1c06360c2f82",
-"index.html": "63fe859d3f9cbe8e9c3d08311367e659",
-"/": "63fe859d3f9cbe8e9c3d08311367e659",
+"index.html": "9905726db93ad12017f1514785e656e7",
+"/": "9905726db93ad12017f1514785e656e7",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin.json": "da1dcd8e0a97f2a8bab82e5ef2770532",
 "assets/assets/images/projects/daliluna/daliluna-5.jpg": "820dd16f78831ccfb2d6ddb926a6bb17",
@@ -83,9 +83,9 @@ const RESOURCES = {"flutter.js": "4b2350e14c6650ba82871f60906437ea",
 "canvaskit/canvaskit.js.symbols": "efc2cd87d1ff6c586b7d4c7083063a40",
 "canvaskit/skwasm.js.symbols": "96263e00e3c9bd9cd878ead867c04f3c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter_bootstrap.js": "a8b2d1c58780f20d030bf687b5f6cff7",
+"flutter_bootstrap.js": "9d50e3c661d9723170b9fb326058e408",
 "version.json": "754606db2b8b2c081a5ea16723ff35e8",
-"main.dart.js": "3bdba9df5fb839378241faf093cf28f2"};
+"main.dart.js": "7d42018d5f8c58d2462783355be099f6"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
